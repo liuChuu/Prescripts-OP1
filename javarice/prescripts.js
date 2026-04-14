@@ -26,6 +26,8 @@ const messages = [
   { text: "USE A DRONE IF SOMEONE ELSE IS USING A DRONE", weight: 40, minCount: 0, amounts: 3 },
   { text: "USE A CAMERA", weight: 45, minCount: 0, amounts: 3 },
   { text: "USE CLAYMORES THIS ROUND", weight: 20, minCount: 0, amounts: 3 },
+  { text: "BREAK THE FIRST 3 BARRICADES YOU SEE", weight: 20, minCount: 0, amounts: 3 },
+  { text: "DESTROY AT LEAST 1 ENEMY GADGET", weight: 20, minCount: 0, amounts: 3 },
 
   // UNCOMMON (mid) / NOT REALLY BAD YET
   { text: "YOU MAY ONLY USE YOUR CHOICE OF SECONDARY TO KILL ENEMIES FROM AFAR FOR THIS ROUND", weight: 10, minCount: 4, amounts: 2 },
@@ -48,7 +50,7 @@ const messages = [
   { text: "RUN AROUND THE SITE OR MAP WITHOUT ANYTHING IN YOUR HAND FOR THE FIRST 30 SECONDS OF THE MATCH", weight: 10, minCount: 6, amounts: 3 },
   { text: "WIN THIS ROUND", weight: 5, minCount: 9, amounts: 3 },
   { text: "DIE TO A SHIELD USER", weight: 20, minCount: 6, amounts: 3 },
-  { text: "DIE TO A CLAYMORE", weight: 5, minCount: 6, amounts: 3 },
+  { text: "MOVE INTO A CLAYMORE", weight: 5, minCount: 6, amounts: 3 },
   { text: "ACE THE ENTIRE ENEMY TEAM", weight: 30, minCount: 5, amounts: 3 },
   { text: "MAKE OPENINGS IN ANY SOFTWALL YOU SEE", weight: 10, minCount: 7, amounts: 3 },
   { text: "DESTORY A FRIENDLY GADGET WITH A GRENADE", weight: 10, minCount: 7, amounts: 3 },
