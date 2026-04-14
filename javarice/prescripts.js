@@ -53,7 +53,9 @@ const messages = [
   { text: "MOVE INTO A CLAYMORE", weight: 5, minCount: 6, amounts: 3 },
   { text: "ACE THE ENTIRE ENEMY TEAM", weight: 30, minCount: 5, amounts: 3 },
   { text: "MAKE OPENINGS IN ANY SOFTWALL YOU SEE", weight: 10, minCount: 7, amounts: 3 },
-  { text: "DESTORY A FRIENDLY GADGET WITH A GRENADE", weight: 10, minCount: 7, amounts: 3 },
+  { text: "DESTORY ALL FRIENDLY GADGETS", weight: 10, minCount: 7, amounts: 3 },
+  { text: "DESTORY EVERY BARRICADE ON THE MAP", weight: 10, minCount: 7, amounts: 3 },
+
 
   // VERY RARE / MEMES
   { text: "IF DEFENDING PLAY ONLY OUTSIDE OTHERWISE KNIFE EVERYONE", weight: 5, minCount: 8, amounts: 10 },
