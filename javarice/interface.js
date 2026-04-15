@@ -52,4 +52,9 @@ document.getElementById("auvelityBtn").addEventListener("click", () => {
           showResultText("Hii... you.. likey me..? ~ Auvelity");
 });
 
+document.getElementById("lisitBtn").addEventListener("click", () => {
+    redirect("https://youtube.com/@l1sitsyn?si=Fk8gJIAkTl__7Yte");
+});
+
+
 
