@@ -13,6 +13,25 @@ function loadStats() {
     }
 }
 
+function displayStats() {
+    // Retrieve and parse the saved string
+    const savedData = localStorage.getItem('gameStats');
+    
+    if (savedData) {
+        const stats = JSON.parse(savedData);
+        
+        // Push the values into your HTML spans
+        document.getElementById('achieved-display').innerText = stats.achieved;
+        document.getElementById('failed-display').innerText = stats.failed;
+        document.getElementById('total-display').innerText = stats.total;
+        
+        // Also update your 'let' variables so the game starts with the correct count
+        achieved = stats.achieved;
+        failed = stats.failed;
+        total = stats.total;
+    }
+}
+
 const display = document.getElementById("scrambleText");
 const buttonContainer = document.getElementById("buttonContainer");
 const startBtn = document.getElementById("startBtn");
