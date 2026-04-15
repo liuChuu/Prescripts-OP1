@@ -31,6 +31,7 @@ function displayStats() {
         total = stats.total;
     }
 }
+window.onload = displayStats;
 
 const display = document.getElementById("scrambleText");
 const buttonContainer = document.getElementById("buttonContainer");
