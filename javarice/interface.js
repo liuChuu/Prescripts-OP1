@@ -30,6 +30,7 @@ function showResultButtons() {
         if (!canResolve) return;
         achieved++; total++;
         updateCounters();
+        saveStats();
         showResultText("CleAr");
     };
 
@@ -37,6 +38,7 @@ function showResultButtons() {
         if (!canResolve) return;
         failed++; total++;
         updateCounters();
+        saveStats();
         showResultText("FaIL");
     };
 }
