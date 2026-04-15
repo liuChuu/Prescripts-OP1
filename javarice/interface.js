@@ -48,7 +48,7 @@ function redirect(url, newTab = true) {
 }
 
 document.getElementById("auvelityBtn").addEventListener("click", () => {
-    showResultText("Hii... you.. likey me..? ~ Auvelity");
+          showResultText("Hii... you.. likey me..? ~ Auvelity");
 });
 
-}
+
