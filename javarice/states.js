@@ -31,8 +31,6 @@ function displayStats() {
         document.getElementById('totalCount').innerText = `PRESCRIPTS: ${total}`;
     }
 }
-window.onload = displayStats;
-
 const display = document.getElementById("scrambleText");
 const buttonContainer = document.getElementById("buttonContainer");
 const startBtn = document.getElementById("startBtn");
