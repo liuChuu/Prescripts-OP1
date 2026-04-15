@@ -1,6 +1,6 @@
 function saveStats() {
     const stats = { achieved, failed, total };
-    localStorage.setItem('gameStats', JSON.stringify(stats));
+    localStorage.setItem('Stats', JSON.stringify(stats));
 }
 
 function loadStats() {
