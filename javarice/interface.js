@@ -39,6 +39,7 @@ function showResultButtons() {
         updateCounters();
         showResultText("FaIL");
     };
+}
 function redirect(url, newTab = true) {
     if (newTab) {
         window.open(url, "_blank", "noopener,noreferrer");
