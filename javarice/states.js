@@ -1,3 +1,17 @@
+function saveStats() {
+    const stats = { achieved, failed, total };
+    localStorage.setItem('gameStats', JSON.stringify(stats));
+}
+
+function loadStats() {
+    const savedData = localStorage.getItem('gameStats');
+    if (savedData) {
+        const stats = JSON.parse(savedData);
+        achieved = stats.achieved;
+        failed = stats.failed;
+        total = stats.total;
+    }
+}
 
 const display = document.getElementById("scrambleText");
 const buttonContainer = document.getElementById("buttonContainer");
@@ -18,9 +32,11 @@ const charS4 = "ABCDEF@HIJLM%defgh*iqrxyz0123456789";
 
 //A bunch of random variables to track state,
 //Don't be cheating now
-let achieved = 0;
-let failed = 0;
-let total = 0;
+const savedData = JSON.parse(localStorage.getItem('gameStats'));
+
+let achieved = savedData ? savedData.achieved : 0;
+let failed = savedData ? savedData.failed : 0;
+let total = savedData ? savedData.total : 0;
 let canResolve = false;
 let clickCount = 0;
 let activeScrambleId = 0;
